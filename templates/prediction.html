@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- link rel="icon" href="../../favicon.ico" -->
+
+    <title>46andUs</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"-->
+
+    <!-- Custom styles for this template -->
+    <link href="../static/starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- Theme CSS -->
+    <link href="../static/css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+<!--script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"-->
+
+  </head>
+
+<style>
+header .container {
+  padding-bottom: 300px;
+}
+
+header .intro-text .name {
+  text-transform: capitalize;
+}
+header {
+  background: #82C8CE
+}
+
+hr.plain {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 20px auto 20px;
+}
+hr.plain {
+  border-color: white;
+}
+</style>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top" style="font-size: 30px">46andUs</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" style="font-size: 20px">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+<header>
+<div class="container" id="home">
+      <div class="row" style="margin-bottom:20px">
+
+          <div class="intro-text">
+                <span class="name">46andUs</span>
+                <hr class="plain">        <!--hr class="star-light"-->
+                <span class="skills">Your likelihood of having children with each eye and hair color is:</span> 
+	  </div>
+
+	<br><br>
+
+      <div class="col-md-3 col-md-offset-3">
+
+      <table class="table",  style="font-size:30px">
+	<tr align="center"><th> <img src="../static/img/blue_eye.jpeg" alt="blue_eye", align="middle", height= 75></th>
+	<th><img src="../static/img/green_eye3.jpg" alt="green_eye",  height= 75></th>
+	<th><img src="../static/img/hazel_eye2.jpg" alt="hazel_eye",  height= 75></th>
+	<th><img src="../static/img/brown_eye2.jpeg" alt="brown_eye", height=75></th></tr>
+	<tr align="center"><td>{{ probabilities[0] }}%</td><td>{{ probabilities[2] }}%</td><td> {{ probabilities[3] }}%</td><td> {{ probabilities[1] }}%</td></tr>
+      </table>
+
+      </div>	
+<!--/div>
+<div class="container" style="margin-top:20px"-->
+      <div class="row">
+
+          <!--div class="intro-text">
+                <span class="skills">Your likelihood of having children with each hair color is:</span>
+          </div-->
+
+        <br><br>
+
+      <div class="col-md-6 col-md-offset-2">
+
+      <table class="table",  style="font-size:30px">
+        <tr align="center">
+	<th> <img src="../static/img/red_hair.jpg" alt="red_hair", align="middle", height= 75></th>
+	<th> <img src="../static/img/blonde_hair2.jpg" alt="blonde_hair", align="middle", height= 75></th>
+        <th><img src="../static/img/light_brown_hair.jpg" alt="light_brown_hair",  height= 75></th>
+        <th><img src="../static/img/dark_brown_hair2.jpg" alt="dark_brown_hair",  height= 75></th>
+        <th><img src="../static/img/black_hair1.jpg" alt="black_hair", height=75></th></tr>
+        <tr align="center"><td>{{ probabilities2[4] }}%</td><td>{{ probabilities2[1] }}%</td><td>{{ probabilities2[2] }}%</td><td> {{ probabilities2[3] }}%</td><td> {{ probabilities2[0] }}%</td></tr>
+      </table>
+
+      </div>
+</div>
+
+
+<!--div class="starter-template">
+        <h2>Predict your children's eye and hair color from genomic data.</h2>
+        <p>Input your 23andMe data below:</p>
+    </div-->
+
+    <!--div class = "starter_template">
+	<div class="col-md-4 col-md-offset-5">
+	      <form action = "/output" method = "POST" 
+	         enctype = "multipart/form-data">
+	         <input type = "file" name = "fileXX" />
+
+	         <br><br>
+
+	         <input type = "file" name = "fileXY" />
+         
+	         <br><br>
+
+		 <input type = "submit"/>
+	      </form>
+	</div>      
+    </div-->
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+
+ </div> <!-- /.container-->
+ </header>
+
+    <section class="container" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="plain">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>This project was completed as part of the <a href="http://insighthealthdata.com/">Insight Health Data Science</a> fellowship, using publicly distributed genetic and phenotypic data from the <a href="https://my.pgp-hms.org/"> Personal Genomic Project </a> and <a href="https://opensnp.org/"> openSNP. </a> Slides describing the data collection and machine learning algorithm are shown below. </p>
+                </div>
+            </div>
+	<br>
+	<div class="container content-section text-center">
+	        <div class="col-lg-12">
+		<iframe src="https://docs.google.com/presentation/d/1iMjYp-hplYgow4cmC4TewxCl8N0TKx8no4yN4fbGYHc/embed?start=false&loop=false&delayms=6000000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe
+		</div>
+	</div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact</h2>
+                    <hr class="plain">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+		    <p> I am a recovering academic currently looking for jobs in data science in the health or life science fields in Boston. Please hire me! </p>
+                </div>
+	    </div>
+	    <br>
+	    <div class="row no-padding">
+                <div class="col-lg-2 col-lg-offset-3 text-center" >
+                    <i class="fa fa-linkedin fa-3x sr-contact"></i>
+                    <p><a href="https://www.linkedin.com/in/katya-kosheleva">katya-kosheleva</a></p>
+		</div>
+		<div class="col-lg-2 text-center">
+                    <img src="../static/img/KatyaKosheleva.jpg" class="img-circle" width=150 alt="">
+                </div>
+                <div class="col-lg-2 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:eakosheleva@gmail.com">eakosheleva@gmail.com</a></p>
+                </div>
+	    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>3481 Melrose Place
+                            <br>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div-->
+   <footer>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        Copyright &copy; Katya Kosheleva 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../static/jquery/jquery.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../static/js/jqBootstrapValidation.js"></script>
+    <script src="../static/js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../static/js/freelancer.min.js"></script>
+
+
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/inputButton.js"></script>
+  </body>
+</html>
+
